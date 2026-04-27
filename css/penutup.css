@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  color: white;
+}
+
+/* HERO BACKGROUND */
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background:
+    linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)),
+    url("../assets/bernadya 7.png");
+
+  background-size: cover;
+  background-position: center;
+}
+
+/* NAVBAR */
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 25px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  opacity: 0.7;
+}
+
+/* CONTENT */
+
+.content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.content h1 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.5;
+  max-width: 900px;
+}
+
+/* FOOTER */
+
+.footer {
+  padding: 30px 60px;
+  font-size: 20px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .content h1 {
+    font-size: 28px;
+  }
+
+  .footer {
+    font-size: 16px;
+    padding: 20px;
+  }
+}

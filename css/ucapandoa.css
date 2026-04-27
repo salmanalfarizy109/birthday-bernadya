@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  color: white;
+}
+
+.hero {
+  min-height: 100vh;
+  background:
+    linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)),
+    url("../assets/bernadya 7.png");
+  background-size: cover;
+  background-position: center;
+}
+
+/* NAVBAR */
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 25px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  opacity: 0.7;
+}
+
+/* CONTENT */
+
+.content {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.content h2 {
+  font-size: 35px;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+.content h1 {
+  font-size: 40px;
+  margin-bottom: 60px;
+}
+
+/* MESSAGE AREA */
+
+.message-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.message-area input {
+  width: 450px;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+/* MUSIC IMAGE */
+
+.music-left,
+.music-right {
+  width: 150px;
+  border-radius: 15px;
+}
+
+/* BUTTON */
+
+button {
+  padding: 15px 60px;
+  border: none;
+  border-radius: 10px;
+  background: #ddd;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #bbb;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+  .message-area {
+    flex-direction: column;
+  }
+
+  .music-left,
+  .music-right {
+    width: 120px;
+  }
+
+  .message-area input {
+    width: 80%;
+  }
+
+  .navbar {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+}

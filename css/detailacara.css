@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  color: white;
+}
+
+.hero {
+  min-height: 100vh;
+  background:
+    linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)),
+    url("../assets/bernadya 7.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 25px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  opacity: 0.7;
+}
+
+.content {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.content h2 {
+  font-weight: 600;
+  margin-bottom: 40px;
+  font-size: 40px;
+}
+.detail-box {
+  width: 660px;
+  margin-left: 120px;
+  text-align: left;
+}
+
+.detail-box h3 {
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 35px;
+}
+
+.detail-box p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+  font-weight: 300;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 25px;
+}
+
+.detail-box span {
+  font-weight: 600;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 25px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .detail-box {
+    width: 90%;
+  }
+
+  .navbar {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+}
+.detailacara {
+  font-size: 30px;
+}
